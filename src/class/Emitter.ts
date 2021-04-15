@@ -1,0 +1,3 @@
+class Emitter {}
+
+export { Emitter };

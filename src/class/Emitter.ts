@@ -13,11 +13,18 @@ class Emitter implements IEmitter {
   }
 
   emit(eventName: string, ...args: string[]): void {
-    if (!(eventName in this.events)) {
-      return;
-    }
+    if (!(eventName in this.events)) return;
 
     this.events[eventName].map((callback) => callback(...args));
+  }
+
+  removeEvent(eventName: string, handler: () => void): number {
+    if (!(eventName in this.events)) return 0;
+
+    const handlerPosition = this.events[eventName].indexOf(handler);
+    this.events[eventName].splice(handlerPosition, 1);
+
+    return handlerPosition;
   }
 }
 

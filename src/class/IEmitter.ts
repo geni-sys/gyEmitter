@@ -17,6 +17,14 @@ interface IEmitter<T = void> {
    * @param eventName event to call
    */
   emit(eventName: string, ...args: string[]): void;
+
+  /**
+   * remove an event
+   *
+   * @param eventName stack event to remove
+   * @param handler index of function
+   */
+  removeEvent(eventName: string, handler: () => void): number;
 }
 
 export { IEmitter, IEventsChannelDTO };

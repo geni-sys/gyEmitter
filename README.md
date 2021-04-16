@@ -8,7 +8,7 @@
   gyEmitter
 </h1>
 
-<div align="center">
+<div>
   <p align="center">gyEmitter é uma biblioteca para receber e emitir eventos (event handle).<p/>
 <div/>
 

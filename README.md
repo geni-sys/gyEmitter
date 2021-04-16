@@ -6,9 +6,11 @@
 
 <h1 align="center">
   gyEmitter
-  
-  <p align="center">gyEmitter é uma biblioteca para receber e emitir eventos (event handle).<p/>
 </h1>
+
+<div align="center">
+  <p align="center">gyEmitter é uma biblioteca para receber e emitir eventos (event handle).<p/>
+<div/>
 
 <h1 align="center">
   <img src="https://img.shields.io/github/languages/top/geni-sys/gyEmitter?style=for-the-badge" /> <space><space>
